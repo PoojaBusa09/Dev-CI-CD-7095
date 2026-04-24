@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "poojabusa/facebook-ui"
+        DOCKER_IMAGE = "busapooja/facebook-ui"
         DOCKER_TAG = "latest"
     }
 
