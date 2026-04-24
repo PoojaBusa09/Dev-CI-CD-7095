@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: facebook-ui
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: facebook-ui
+  template:
+    metadata:
+      labels:
+        app: facebook-ui
+    spec:
+      containers:
+      - name: facebook-ui
+        image: poojabusa/facebook-ui:latest
+        ports:
+        - containerPort: 80
